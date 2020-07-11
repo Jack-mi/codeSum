@@ -10,8 +10,8 @@ import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 
 public class DataPreprocess {
-    public static String target_dir = "/Users/liuxiaosu/IdeaProjects/codeSum/src/data/";
-    public static String codebase_dir = "/Users/liuxiaosu/codebase/";
+    public static String target_dir = "/Users/bytedance/IdeaProjects/codeSum/src/data/";
+    public static String codebase_dir = "/Users/bytedance/codebase/";
     public static Integer file_idx = 0;
     public static void WriteFile(Map<String, String> methodInfo, String project_name) {
         for (Map.Entry<String, String> m : methodInfo.entrySet()) {
@@ -149,31 +149,31 @@ public class DataPreprocess {
         System.out.println("1-tomcat");
         parser(tomcat, "1-tomcat");
 
-//        System.out.println("2-gradle");
-//        parser(gradle, "2-gradle");
-//
-//        System.out.println("3-hadoop");
-//        parser(hadoop, "3-hadoop");
-//
-//        System.out.println("4-spring-framework");
-//        parser(spring_framework, "4-spring-framework");
-//
-//        System.out.println("5-zxing");
-//        parser(zxing, "5-zxing");
-//
-//        System.out.println("6-cassandra");
-//        parser(cassandra, "6-cassandra");
-//
-//        System.out.println("7-fresco");
-//        parser(fresco, "7-fresco");
-//
-//        System.out.println("8-guava");
-//        parser(guava, "8-guava");
-//
-//        System.out.println("9-kafka");
-//        parser(kafka, "9-kafka");
-//
-//        System.out.println("10-wildfly");
-//        parser(wildfly, "10-wildfly");
+        System.out.println("2-gradle");
+        parser(gradle, "2-gradle");
+
+        System.out.println("3-hadoop");
+        parser(hadoop, "3-hadoop");
+
+        System.out.println("4-spring-framework");
+        parser(spring_framework, "4-spring-framework");
+
+        System.out.println("5-zxing");
+        parser(zxing, "5-zxing");
+
+        System.out.println("6-cassandra");
+        parser(cassandra, "6-cassandra");
+
+        System.out.println("7-fresco");
+        parser(fresco, "7-fresco");
+
+        System.out.println("8-guava");
+        parser(guava, "8-guava");
+
+        System.out.println("9-kafka");
+        parser(kafka, "9-kafka");
+
+        System.out.println("10-wildfly");
+        parser(wildfly, "10-wildfly");
     }
 }
